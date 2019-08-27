@@ -9,13 +9,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MongoBulkExecutorSaple
+namespace MongoBulkExecutorSample
 {
     using Microsoft.Azure.CosmosDB.BulkExecutor.BulkImport;
     using MongoDB.Bson;
     using System.Configuration;
     using System.Diagnostics;
-    using System.Security;
     using System.Threading;
 
     class Program
@@ -30,7 +29,6 @@ namespace MongoBulkExecutorSaple
         public async static Task Main(string[] args)
         {
             new Program().Go().Wait();
-            //await new Program().RunBulkScenario(CollectionName);
         }
 
 
